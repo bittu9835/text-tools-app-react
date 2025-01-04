@@ -55,9 +55,8 @@ export default function Navbar(props) {
         daynumber = "0" + daynumber;
     }
     return (
-        <>
             <div className="navbar flex items-center bg-green-400 h-10 px-8 text-white gap-3">
-                <div className="icon w-14 bg-white rounded-full">
+                <div className="icon w-12 bg-white rounded-full">
                     <img src={logo} alt="" />
                 </div>
                 <h3 className='text-lg font-bold cursor-pointer'>{props.titles}</h3>
@@ -73,8 +72,6 @@ export default function Navbar(props) {
                         <p>{ctime}</p>
                     </div>
                 </div>
-               
             </div>
-        </>
     )
 }

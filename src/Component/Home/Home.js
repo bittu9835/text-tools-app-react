@@ -4,7 +4,7 @@ import Button from "../Buttons/Button";
 
 export default function Home() {
     const [text, setText] = useState('');
-    let length = text != '' ? text.split(" ").length : 0
+    let length = text !== '' ? text.split(" ").length : 0
     let seconds = (0.008 * length ) * 60
     seconds = Math.round(seconds * 10) / 10
     let minutes = 0.008 * length
@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="countResult mb-5">
                     <span className="text-xl font-bold ml-2">
-                        {text != '' ? text.split(" ").length : 0}
+                        {text !== '' ? text.split(" ").length : 0}
                     </span> Words <span className="text-xl font-bold ml-2">{text.length}</span>{" "}
                     Characters{" "}
                     <span className="text-lg font-bold ml-2">
